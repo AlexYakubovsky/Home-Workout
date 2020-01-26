@@ -1,0 +1,30 @@
+.header {
+  grid-area: header;
+  border-bottom: 2px solid $descriptionColor;
+  padding: 0 15%;
+  background: $headerBG;
+  font-family: $mainFont;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  text-align: center;
+  line-height: 0;
+
+  p {
+    font-size: 13px;
+    line-height: 1;
+    font-family: $timeFont;
+    color: $timeColor;
+  }
+
+  .header-time {
+    text-align: left;
+  }
+
+  .header-day {
+    text-align: right;
+  }
+
+  @media (min-width: 1520px) and (max-width: 1930px) {
+    padding: 0 20%;
+  }
+}

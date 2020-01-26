@@ -1,0 +1,27 @@
+@import "./helpers/variables";
+@import "./helpers/mixins";
+@import "./helpers/colors";
+
+@import "./sections/header";
+@import "./sections/menu";
+@import "./sections/content";
+@import "./sections/footer";
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 40px 75px 1fr 40px;
+  grid-template-areas:
+          "header header header"
+          "menu menu menu"
+          ". content ."
+          "footer footer footer";
+  margin: 0;
+  padding: 0;
+  background-color: $blackBG;
+  height: 100vh;
+}

@@ -1,0 +1,10 @@
+{
+  "database": {
+    "training": "./database/training.json"
+  },
+
+  "routes": {
+    "trainings": "./routes/trainings.js",
+    "training": "./routes/training.js"
+  }
+}

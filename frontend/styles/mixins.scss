@@ -1,0 +1,41 @@
+@mixin trainingInfo {
+  padding: 1px;
+  border-bottom: 1px solid #e0dfe4;
+  background: $headerBG;
+  box-shadow: 0 10px 25px rgba(173, 182, 241, 0.6);
+  position: relative;
+  font-weight: bold;
+
+  &:last-child {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+@mixin trainingIcon {
+  height: 60px;
+  width: 60px;
+  float: left;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+@mixin trainingTime {
+  font-family: $timeFont;
+  font-size: 13px;
+  line-height: 20px;
+  color: $timeColor;
+}
+
+@mixin infoAbout($colons){
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat($colons, 100px);
+  grid-gap: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@mixin infoTime {
+  font-size: 18px;
+  color: $timeColor;
+}
